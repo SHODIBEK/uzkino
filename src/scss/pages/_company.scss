@@ -1,0 +1,41 @@
+.company {
+    background: #E7E8EB;
+    min-height: 504px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-column-gap: 10px;
+    }
+    
+    &__text {
+        padding-top: 77px;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 44px;
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            color: $color-black;
+        }
+        
+        p {
+            display: -webkit-box;
+            font-family: $helvetica;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 27px;
+            color: $color-darkgrey;
+            -webkit-line-clamp: 5; /* количество строк */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    
+    &__btn {
+            
+    }
+}

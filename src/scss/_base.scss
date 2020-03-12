@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    font-family: $montserrat,$helvetica;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    color: $color-lightgrey;
+    background: $color-body;
+}
+
+button {
+    outline: none;
+    border: none;
+    &[disabled] {
+        background-color: #727272;
+        pointer-events: none;
+    }
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button { cursor:pointer }
+
+.content {
+    position: relative;
+}
+
+.container {
+    max-width: 994px;
+    margin: 0 auto;
+    // @include mobile {
+    //     max-width: 320px;
+    //     padding: 0 15px;
+    // }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 39px;
+    height: 52px;
+    font-family: $helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    span {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6){
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            transition: 0.5s ease-in-out;
+        }
+        &:nth-child(3),
+        &:nth-child(5) {
+            position: absolute;
+            display: block;
+            width: 2px;
+            height: 100%;
+            transition: 0.5s ease-in-out;
+        }
+        &:nth-child(1) {
+            top: 0;
+            left: -85%;
+        }
+        &:nth-child(2) {
+            top: 0;
+            right: -20%;
+        }
+        &:nth-child(4) {
+            bottom: 0;
+            right: -85%;
+        }
+        
+        &:nth-child(6) {
+            bottom: 0;
+            left: -20%;
+        }
+        &:nth-child(3) {
+            top: 0;
+            left: 0;
+        }
+        
+        &:nth-child(5) {
+            top: 0;
+            right: 0;
+        }
+    }
+    &:hover {
+        span {
+            &:nth-child(1) {
+                top: 0;
+                left: -20%;
+            }
+            &:nth-child(2) {
+                top: 0;
+                right: -85%;
+            }
+            &:nth-child(4) {
+                bottom: 0;
+                right: -20%;
+            }
+            
+            &:nth-child(6) {
+                bottom: 0;
+                left: -85%;
+            }
+        }
+    }
+    &-grey {
+        color: $color-black;
+        span {
+            background: $color-black;
+            &:nth-child(odd) {
+                
+            }
+        }
+    }
+}
+
+.swipe_table {
+    display: inline-block;
+    width: 35px;
+    height: 41px;
+    background: url('../images/icons/swipe.svg') no-repeat center;
+}
+
+.swipe-table {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: 0 0;
+    z-index: 2;
+}
+
+.swipe-table .swipe_table {
+    animation: swipe 2s infinite;
+    max-width: 100%;
+}
+
+.search-icon,
+.eye-icon,
+.subs-icon {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.eye-icon {
+    background: url('../images/icons/eye.png') no-repeat center;
+    &:hover {
+        background: url('../images/icons/eye-hover.png') no-repeat center;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.search-icon {
+    background: url('../images/icons/search.png') no-repeat center;
+    &:hover {
+        background: url('../images/icons/search-hover.png') no-repeat center;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.subs-icon {
+    background: url('../images/icons/subs.png') no-repeat center;
+    &:hover {
+        background: url('../images/icons/subs-hover.png') no-repeat center;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto 1px auto;
+        margin-bottom: 1px;
+        button.owl-prev,
+        button.owl-next {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            z-index: 2;
+            
+            svg {
+                width: 100%;
+                height: 100%;
+                stroke: #fff;
+                fill: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                svg {
+                    stroke: $color-yellow;
+                }
+            }
+        }
+        button.owl-prev {
+            left: -15px;
+        }
+        
+        button.owl-next {
+            right: -15px;
+        }
+    }
+}

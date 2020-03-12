@@ -1,0 +1,21 @@
+extends pug/base
+
+append vars
+	- title = 'Главная страница'
+	- meta.description = 'Описание страницы'
+	- meta.viewport = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+	- link.icon = './favicon.ico'
+	- meta.formatDetection = 'telephone=no'
+	- meta.themeColor = '#1E1E1E'
+	- defaultLink = 'javascript:void(0);'
+
+block content
+	.content
+		// Шапка
+		include pages/header
+		// Контент
+		.main
+			// Слайдер
+			include pages/slider
+			// О компании
+			include pages/company

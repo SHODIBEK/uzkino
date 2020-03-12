@@ -1,0 +1,25 @@
+.flag-img
+header.header
+    .container
+        .header__wrapper
+            .menu__btn#menuBtn
+                span
+                | Меню
+            a(href="/").header__logo
+                img(src="logo.svg", alt="logo")
+            .header__right
+                .header__btns
+                    button.search-icon(type="button" title="Поиск по сайту")
+                    button.eye-icon#js-eye(type="button" title="Версия для слабовидящих")
+                    button.subs-icon(type="button" title="Подписаться")
+                .header__lang.lang
+                    .lang__item
+                        a(href="#").lang__link
+                            | Uz
+                    .lang__item
+                        a(href="#").lang--active.lang__link
+                            | Ru
+                    .lang__item
+                        a(href="#").lang__link
+                            | En
+    include menu
