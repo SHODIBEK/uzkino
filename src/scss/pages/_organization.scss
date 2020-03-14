@@ -1,0 +1,93 @@
+.organization {
+    padding-bottom: 55px;
+    min-height: 476px;
+    background: url('../images/content/news-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    &__title {
+        padding-bottom: 40px;
+
+        h2 {
+            color: $color-black;
+        }
+        a {
+            color: $color-black;
+            &::before {
+                background: $color-black;
+            }
+            &::after {
+                background: $color-yellow;
+            }
+        }
+    }
+    
+    &__slider {
+        padding: 0 65px 0 55px;
+        &-item {
+            display: grid;
+            grid-template-columns: 1fr 391px;
+            grid-gap: 34px;
+        }
+        
+        &-info {
+            h2 {
+                margin-top: 0;
+                margin-bottom: 29px;
+                font-family: $montserrat;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 27px;
+                color: $color-black;
+            }
+            
+            dl {
+                display: grid;
+                grid-template-columns: 127px 1fr;
+                grid-gap: 30px;
+                margin: 0;
+                font-size: 16px;
+                line-height: 30px;
+            }
+            
+            .margin-b {
+                margin-bottom: 18px;
+            }
+            
+            dt {
+                margin: 0;
+                font-family: $helvetica-bold;
+                color: $color-darkgrey;
+            }
+            
+            dd,
+            a{
+                margin: 0;
+                font-family: $helvetica-roman;
+                font-weight: normal;
+                color: $color-black;
+                text-decoration-color: $color-yellow;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .owl-carousel {
+        .owl-nav {
+            top: 41%;
+            button.owl-prev,
+            button.owl-next {
+                svg {
+                    stroke: $color-black;
+                }
+            }
+            button.owl-prev {
+                left: -5px;
+            }
+            button.owl-next {
+                right: -5px;
+            }
+        }
+    }
+}

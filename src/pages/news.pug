@@ -1,0 +1,23 @@
+section.news
+    .container
+        .news__wrapper
+            .news__title
+                h2
+                    | Новости
+                a(href="#" title="перейти ко всем новостям")
+                    | перейти ко всем новостям
+            .news__sliderWrapper
+                .news__items.owl-carousel.fadeOut
+                    - for(var i = 0; i < 3; i++) {
+                        a(href=`${i+1}`).news__item
+                            .news__left
+                                .news__date
+                                    date.date
+                                        | 25.04.2019
+                                .news__name
+                                    | Зарубежным кинокомпаниям будут компенсировать часть затрат съемочных расходов в Узбекистане
+                                .news__desc
+                                    | С первого дня 2020 года будет запущена система «rebate», впервые пройдет выставка отечественных кинолокаций «LocationEXPOuz», ежегодно будет
+                            .news__sliderImg
+                                img(src=`images/content/news-1.jpg`, alt=`${i+1}`)
+                    - }

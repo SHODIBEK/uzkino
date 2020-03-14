@@ -1,0 +1,115 @@
+.filmmakers {
+    position: relative;
+    padding-bottom: 50px;
+    background: url('../images/content/news-bg.jpg') no-repeat center;
+    background-size: cover;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(000, 000, 000, 0.9);
+        z-index: 0;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    
+    &__title {
+        padding-top: 40px;
+        a {
+            &::after {
+                background: $color-yellow;
+            }
+            &::before {
+                background: $color-darkgrey;
+            }
+        }
+    }
+    
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2px;
+    }
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 20px 37px 20px;
+        width: 100%;
+        height: 316px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #050505;
+            opacity: 0.4;
+            z-index: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        &:hover {
+            &::after {
+                opacity: 0.7;
+                transition: opacity 0.5s ease-in-out;
+            }
+            
+            .filmmakers__info {
+                transform: translateY(0);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-family: $montserrat;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: $helvetica-bold;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 27px;
+        }
+        
+        span {
+            font-family: $helvetica-roman;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 27px;
+        }
+        .btn {
+            color: $color-white;
+            margin-top: 42px;
+            padding: 0 20px;
+
+            span {
+                background: $color-white;
+            }
+        }
+    }
+    
+    &__info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+        transform: translateY(109px);
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+    }
+}

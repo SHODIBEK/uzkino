@@ -1,0 +1,164 @@
+.news {
+    height: 501px;
+    padding-top: 64px;
+    padding-bottom: 76px;
+    background: url('../images/content/news-bg.jpg') no-repeat center;
+    background-size: cover;
+    &__title {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        display: flex;
+        align-items: baseline;
+        h2 {
+            margin: 0;
+            font-family: $montserrat;
+            font-weight: bold;
+            font-size: 40px;
+            color: #252525;
+        }
+        
+        a {
+            position: relative;
+            display: inline-block;
+            margin-left: 39px;
+            font-family: $helvetica-light;
+            font-weight: 300;
+            font-size: 16px;
+            text-decoration: none;
+            color: #252525;
+            
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background: $color-yellow;
+            }
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: -14px;
+                left: -22px;
+                width: 1px;
+                height: 32px;
+                background: #252525;
+            }
+            
+            &:hover {
+                &::after {
+                    background: transparent;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        position: relative;
+        
+    }
+    &__items {
+        padding-left: 77px;
+        padding-right: 85px;
+    
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 462px 1fr;
+        grid-gap: 17px;
+        align-items: flex-end;
+        text-decoration: none;
+    }
+    
+    
+    &__date {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+    
+    &__left {
+        padding-top: 110px;
+    }
+    
+    &__img {
+        position: absolute;
+        display: block;
+        top: -109px;
+        left: 0;
+    }
+    
+    &__name {
+        display: block;
+        display: -webkit-box;
+        margin-bottom: 12px;
+        font-family: $montserrat;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #252525;
+        text-decoration: underline;
+        text-decoration-color: $color-yellow;
+        -webkit-line-clamp: 4; /* количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    &__desc {
+        display: block;
+        display: -webkit-box;
+        font-family: $helvetica-light;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 27px;
+        color: #3F3E3E;
+        -webkit-line-clamp: 3; /* количество строк */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .owl-carousel {
+        .owl-nav {
+            top: 45%;
+            button.owl-prev,
+            button.owl-next {
+                svg {
+                    stroke: #252525;
+                }
+            }
+            button.owl-prev {
+                left: -4px;
+            }
+            button.owl-next {
+                right: -7px;
+            }
+        }
+    }
+    &__sliderWrapper {
+        position: relative;
+        padding-top: 7px;
+    }
+}
+
+date.date {
+    position: relative;
+    margin-left: 29px;
+    font-family: $montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    color: #3F3E3E;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -29px;
+        width: 16px;
+        height: 17px;
+        background: url('../images/icons/date.png') no-repeat center;
+    }
+}

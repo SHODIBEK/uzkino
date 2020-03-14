@@ -54,7 +54,7 @@
             display: block;
             &:nth-child(1) {
                 margin-bottom: 8px;
-                font-family: $helvetica;
+                font-family: $helvetica-bold;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 14px;
@@ -113,7 +113,7 @@
         }
         &-right {
             display: -webkit-box;
-            font-family: $helvetica;
+            font-family: $helvetica-light;
             font-style: normal;
             font-weight: 300;
             font-size: 16px;

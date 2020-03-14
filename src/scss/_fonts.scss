@@ -2,35 +2,47 @@
 
 // @font-face {
 //     font-family: 'Montserrat';
-//     src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat/montserrat.woff2') format('woff2'), url('fonts/HelveticaNeueCyr/../fonts/montserrat/montserrat.woff') format('woff'), url('fonts/HelveticaNeueCyr/../fonts/montserrat/montserrat.ttf') format('truetype');
+//     src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat/montserrat.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr/../fonts/montserrat/montserrat.woff') format('woff'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr/../fonts/montserrat/montserrat.ttf') format('truetype');
 //     font-weight: 400;
 //     font-style: normal;
 // }
 // @font-face {
 //     font-family: 'Montserrat';
-//     src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/montserratbold.woff2') format('woff2'), url('fonts/HelveticaNeueCyr/../fonts/montserrat/montserratbold.woff') format('woff'), url('fonts/HelveticaNeueCyr/../fonts/montserrat/montserratbold.ttf') format('truetype');
+//     src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/montserratbold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr/../fonts/montserrat/montserratbold.woff') format('woff'), url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr/../fonts/montserrat/montserratbold.ttf') format('truetype');
 //     font-weight: 700;
 //     font-style: normal;
 // }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
-	src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
-	src: local('HelveticaNeueCyr-Light'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff') format('woff'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+    font-family: 'HelveticaNeueCyrRoman';
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.eot');
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.woff') format('woff'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrRoman') format('svg');
+    font-display: fallback;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyrBold';
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.eot');
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.woff') format('woff'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+    font-display: fallback;
 }
 
 @font-face {
-	font-family: 'HelveticaNeueCyr';
-	src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot');
-	src: local('HelveticaNeueCyr-Bold'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff') format('woff'),
-		url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'HelveticaNeueCyrLight';
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.eot');
+    src: url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.eot') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.woff2') format('woff2'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.woff') format('woff'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCyr/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+    font-display: fallback;
 }

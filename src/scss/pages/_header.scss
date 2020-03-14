@@ -5,6 +5,20 @@
     right: 0;
     width: 100%;
     z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        background: rgba(36, 35, 35, 0.95);
+        backdrop-filter: blur(20px);
+        transition: all 0.3s ease-in-out;
+    }
     &__wrapper {
         position: relative;
         display: flex;
@@ -26,10 +40,13 @@
         margin-top: 38px;
         margin-left: 214px;
         height: 100%;
+        transition: all 0.3s ease-in-out;
         
         img {
+            width: 141px;
             max-width: 100%;
             height: auto;
+            transition: all 0.3s ease-in-out;
         }
     }
     &__right {
@@ -40,6 +57,7 @@
         margin-top: 39px;
         margin-left: 50px;
         flex: 0 0 auto;
+        transition: all 0.3s ease-in-out;
     }
     &__btns {
         display: flex;
@@ -52,6 +70,32 @@
             }
         }
     }
+    
+    &--fixed {
+        padding-bottom: 46px;
+        transition: all 0.3s ease-in-out;
+        &::after {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+        }
+        .menu__btn {
+            margin-top: 65px;
+            transition: all 0.3s ease-in-out;
+        }
+        .header__logo {
+            margin-top: 46px;
+            transition: all 0.3s ease-in-out;
+            img {
+                width: 299px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .header__right {
+            margin-top: 63px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
 }
 
 .flag-img {
@@ -61,7 +105,7 @@
     width: 473px;
     height: 210px;
     background: url(../images/icons/flag.png) no-repeat top left;
-    z-index: 0;
+    z-index: 2;
 }
 
 .lang {
@@ -78,7 +122,7 @@
     
     &__link {
         display: inline-block;
-        font-family: $helvetica;
+        font-family: $helvetica-roman;
         font-weight: normal;
         font-size: 15px;
         line-height: 15px;
@@ -93,7 +137,7 @@
     }
     
     &--active {
-        font-weight: bold;
+        font-family: $helvetica-bold;
         color: $color-yellow;
     }
 }
@@ -104,13 +148,13 @@
     align-items: center;
     margin-top: 37px;
     height: 100%;
-    font-family: $helvetica;
+    font-family: $helvetica-bold;
     font-weight: bold;
     font-size: 15px;
     color: $color-white;
     text-transform: uppercase;
     cursor: pointer;
-    transition: .25s ease-in-out;
+    transition: .3s ease-in-out;
     span {
         position: relative;
         display: inline-block;
@@ -180,7 +224,7 @@
         width: 100%;
         height: 100%;
         background: rgba(36, 35, 35, 0.95);
-        filter: blur(20px);
+        backdrop-filter: blur(20px);
         z-index: -1;
     }
     &--active {

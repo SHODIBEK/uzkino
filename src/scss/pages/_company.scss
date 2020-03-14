@@ -1,12 +1,22 @@
 .company {
-    background: #E7E8EB;
-    min-height: 504px;
+    background: linear-gradient(252.12deg, #D5D6DA 100%, #F2F2F2 0%);
+    height: 504px;
     &__wrapper {
         display: grid;
         grid-template-columns: 500px 1fr;
         grid-column-gap: 10px;
     }
-    
+    &__img {
+        position: relative;
+        width: 100%;
+        
+        img {
+            position: absolute;
+            top: -65px;
+            left: -91px;
+            z-index: 2;
+        }
+    }
     &__text {
         padding-top: 77px;
 
@@ -21,8 +31,9 @@
         }
         
         p {
+            margin-bottom: 58px;
             display: -webkit-box;
-            font-family: $helvetica;
+            font-family: $helvetica-light;
             font-style: normal;
             font-weight: 300;
             font-size: 16px;

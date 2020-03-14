@@ -1,0 +1,60 @@
+.relations {
+    position: relative;
+    padding: 72px 0 65px 0;
+    width: 100%;
+    min-height: 502px;
+    background: url('../images/content/relations-bg.jpg') no-repeat center;
+    background-size: cover;
+    &__wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 572px;
+        grid-column-gap: 40px;
+
+    }
+    &__img {
+        position: absolute;
+        top: -114px;
+        left: -59px;
+    }
+    &__block {
+        
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            width: 334px;
+            font-family: $helvetica-bold;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 40px;
+            color: $color-white;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 13px;
+            font-family: $helvetica-roman;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 27px;
+            color: $color-white;
+            letter-spacing: 0.3px;
+        }
+    }
+    &__btn {
+        margin-top: 32px;
+        .btn {
+            min-width: 322px;
+            color: $color-white;
+            span {
+                background: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+section.services
+    .container
+        .services__wrapper
+            .services__title
+                h2
+                    | Услуги
+                a(href="#" title="перейти ко всем услугам")
+                    | перейти ко всем услугам
+            .services__lists
+                each val,index in ['Государственный заказ', 'Совместное производство', 'Кинодеятели Узбекистана', 'Услуги по производству']
+                    .services__list
+                        a(href="#" class=`servicesIcon-${index+1}`).services__link
+                            +svg(`services-${index + 1}`)
+                            span=val
+                            span.animation__line
+                                span
+                                span
+                                span
+                                span
+                                span
+                                span

@@ -1,0 +1,50 @@
+section.organization
+    .container
+        .organization__wrapper
+            .organization__title.title
+                h2
+                    | Подведомственные организации
+                a(href="#" title="Все организации")
+                    | Все организации
+            .organization__slider.owl-carousel
+                - for(var i = 0; i < 2; i++) {
+                    .organization__slider-item
+                        .organization__slider-info
+                            h2
+                                | ГУП «Узбекфильм»
+                            
+                            dl.margin-b
+                                dt
+                                    | Вид деятельности
+                                dd
+                                    | Производство и предоставление услуг по производству кинопродукции
+                            dl
+                                dt
+                                    | Директор
+                                dd
+                                    | Фатих Джалалов
+                            dl
+                                dt
+                                    | Адрес
+                                dd
+                                    | г. Ташкент, ул. Чиланзар, 1
+                            dl
+                                dt
+                                    | Контакты
+                                dd
+                                    | <b>+998 71 277-67-22</b>
+                            dl
+                                dt
+                                    | e-mail
+                                dd
+                                    a(href="mailto:office@uzbekfilm.uz" title="office@uzbekfilm.uz")
+                                        | office@uzbekfilm.uz
+                            dl
+                                dt
+                                    | Веб-сайт
+                                dd
+                                    a(href="www.uzbekfilm.uz" title="www.uzbekfilm.uz")
+                                        | www.uzbekfilm.uz
+                        .organization__slider-img
+                            img(src="images/content/image.jpg", alt="")
+                - }
