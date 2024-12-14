@@ -59,7 +59,7 @@
 		"@babel/polyfill": "7.4.3",
 		"@fancyapps/fancybox": "3.5.7",
 		"aos": "2.3.4",
-		"jquery": "3.4.0",
+		"jquery": "3.5.0",
 		"ninelines-ua-parser": "1.1.6",
 		"normalize.css": "8.0.1",
 		"owl.carousel": "2.3.4",
